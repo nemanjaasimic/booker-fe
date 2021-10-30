@@ -1,0 +1,25 @@
+/**
+ * The application configuration.
+ * @author Nemanja Simic
+ */
+application {
+  config {
+    baseName booker
+    applicationType monolith
+    authenticationType jwt
+    buildTool gradle
+    cacheProvider no
+    clientFramework react
+    clientPackageManager npm
+    databaseType sql
+    prodDatabaseType postgresql
+    devDatabaseType postgresql
+    enableSwaggerCodegen true
+    languages [en, sr]
+    packageName com.isa.booker
+    skipServer true // set to true in frontend app generation
+    skipClient false //set to false in frontend app generation
+    websocket spring-websocket
+  }
+}
+
